@@ -34,8 +34,8 @@ jobs:
     needs: prepare_release
     strategy:
       matrix:
-        DEVICE: [pinephone, pinetab, pinephonepro, halium-9]
-        EDITION: [nemomobile]
+        DEVICE: [pinephone]
+        EDITION: [nemomobile-git]
         BRANCH: [stable]
     steps:
       - name: Get current date
